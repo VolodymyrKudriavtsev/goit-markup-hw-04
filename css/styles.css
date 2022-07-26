@@ -11,6 +11,7 @@
   --bgc-btn: #f5f4fa;
   --bgc-hero: #2f303a;
   --bgc-team: #f5f4fa;
+  /* --icon-main-fill: #afb1b8; */
 }
 
 body {
@@ -103,7 +104,6 @@ img {
 }
 
 .top-nav-link,
-/* .top-contact-item */
 .top-mail,
 .top-tel {
   display: inline-block;
@@ -116,18 +116,11 @@ img {
   text-decoration: none;
 }
 
-/* .top-mail,
-.top-tel {
-  text-decoration: none;
-} */
-
 .top-nav-link:hover,
 .top-nav-link:focus {
   color: var(--acent-color);
 }
 
-/* .top-contact-item:hover,
-.top-contact-item:focus, */
 .top-mail:hover,
 .top-mail:focus,
 .top-tel:hover,
@@ -148,6 +141,7 @@ img {
 }
 
 /* ------- MAIN------- */
+/* hero */
 .hero {
   height: 600px;
   max-width: 1600px;
@@ -197,6 +191,7 @@ img {
   background-color: var(--hero-btn-hoover);
 }
 
+/* benefits */
 .benefits-list {
   display: flex;
   gap: 30px;
@@ -206,29 +201,13 @@ img {
   width: calc((100% - 90px) / 4);
 }
 
-.benefits-item::before {
-  content: '';
-  display: block;
-  margin-bottom: 30px;
+.benefits-icon {
+  width: 270px;
   height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
   background-color: var(--bgc-btn);
   border-radius: 4px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.benefits-list .benefits-item:nth-child(1)::before {
-  background-image: url(../antenna.svg);
-}
-.benefits-list .benefits-item:nth-child(2)::before {
-  background-image: url(../clock.svg);
-}
-.benefits-list .benefits-item:nth-child(3)::before {
-  background-image: url(../diagram.svg);
-}
-.benefits-list .benefits-item:nth-child(4)::before {
-  background-image: url(../astronaut.svg);
 }
 
 .benefits-title {
@@ -247,6 +226,7 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* work */
 .work {
   padding-bottom: 94px;
 }
@@ -273,6 +253,7 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
+/* team */
 .team {
   background-color: var(--bgc-team);
 }
@@ -332,6 +313,7 @@ img {
   outline: 1px dotted rgb(0, 72, 255);
 }
 
+/* clients */
 .clients-list {
   display: flex;
   justify-content: center;
@@ -346,6 +328,7 @@ img {
   border-radius: 4px;
 }
 
+/* filter */
 .filter-list {
   display: flex;
   justify-content: center;
@@ -385,6 +368,7 @@ img {
   overflow: hidden;
 }
 
+/* cards */
 .card-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
