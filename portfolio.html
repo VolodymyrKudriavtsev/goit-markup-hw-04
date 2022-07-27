@@ -26,16 +26,31 @@
         <nav class="top-nav">
           <a href="./index.html" class="top-logo"> <span class="logo-blue">Web</span>Studio </a>
           <ul class="top-nav-list list">
-            <li class="top-nav-item"><a href="./index.html" class="top-nav-link">Студія</a></li>
+            <li class="top-nav-item">
+              <a href="./index.html" class="top-nav-link">Студія</a>
+            </li>
             <li class="top-nav-item">
               <a href="./portfolio.html" class="top-nav-link current">Портфоліо</a>
             </li>
-            <li class="top-nav-item"><a href="" class="top-nav-link">Контакти</a></li>
+            <li class="top-nav-item"><a href="#" class="top-nav-link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="top-contact-list list">
-          <li><a href="mailto:info@devstudio.com" class="top-mail">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="top-tel">+38 096 111 11 11</a></li>
+          <li class="top-contact-item">
+            <a href="mailto:info@devstudio.com" class="top-mail">
+              <svg class="top-mail-icon" width="16" height="12">
+                <use href="./images/icon.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="top-contact-item">
+            <a href="tel:+380961111111" class="top-tel">
+              <svg class="top-tel-icon" width="10" height="16">
+                <use href="./images/icon.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -145,27 +160,78 @@
 
     <footer class="bottom">
       <div class="container">
-        <a href="./index.html" class="bottom-logo"> <span class="logo-blue">Web</span>Studio </a>
-        <address>
-          <ul class="bottom-contact-list list">
-            <li class="bottom-contact-item">
+        <div class="bottom-contacts">
+          <a href="./index.html" class="bottom-logo"> <span class="logo-blue">Web</span>Studio </a>
+          <address>
+            <ul class="bottom-contact-list list">
+              <li class="bottom-contact-item">
+                <a
+                  href="https://goo.gl/maps/me1CtNLv8pc6cbW38"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="bottom-adr"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="bottom-contact-item">
+                <a href="mailto:info@devstudio.com" class="bottom-mail">info@devstudio.com</a>
+              </li>
+              <li class="bottom-contact-item">
+                <a href="tel:+380961111111" class="bottom-tel">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="bottom-soc">
+          <h2 class="bottom-title">Приєднуйтесь</h2>
+          <ul class="bottom-soc-list list">
+            <li class="bottom-soc-item">
               <a
-                href="https://goo.gl/maps/me1CtNLv8pc6cbW38"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="bottom-adr"
-              >
-                м. Київ, пр-т Лесі Українки, 26
+                class="bottom-soc-link"
+                ><svg class="bottom-soc-icon" width="20" height="20">
+                  <use href="./images/icon.svg#instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="bottom-contact-item">
-              <a href="mailto:info@devstudio.com" class="bottom-mail">info@devstudio.com</a>
+            <li class="bottom-soc-item">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="bottom-soc-link"
+              >
+                <svg class="bottom-soc-icon" width="20" height="20">
+                  <use href="./images/icon.svg#twitter"></use></svg
+              ></a>
             </li>
-            <li class="bottom-contact-item">
-              <a href="tel:+380961111111" class="bottom-tel">+38 096 111 11 11</a>
+            <li class="bottom-soc-item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="bottom-soc-link"
+              >
+                <svg class="bottom-soc-icon" width="20" height="20">
+                  <use href="./images/icon.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li class="bottom-soc-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="bottom-soc-link"
+              >
+                <svg class="bottom-soc-icon" width="20" height="20">
+                  <use href="./images/icon.svg#linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
