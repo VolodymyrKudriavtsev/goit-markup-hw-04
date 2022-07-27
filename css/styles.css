@@ -98,15 +98,23 @@ img {
   color: var(--h-text-color);
 }
 
+.top-mail-icon {
+  /* fill: currentColor; */
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 .top-mail,
 .top-tel {
   color: var(--p-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .top-nav-link,
 .top-mail,
 .top-tel {
-  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -201,13 +209,17 @@ img {
   width: calc((100% - 90px) / 4);
 }
 
-.benefits-icon {
+.benefits-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
-  background-color: var(--bgc-btn);
+  box-flex-group: var(--bgc-btn);
   border-radius: 4px;
+
+  outline: 1px solid royalblue;
 }
 
 .benefits-title {
