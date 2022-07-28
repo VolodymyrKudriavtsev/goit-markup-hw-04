@@ -6,7 +6,6 @@
   --white-text-color: #ffffff;
   --foot-tel-color: rgba(255, 255, 255, 0.6);
   --hero-btn-hoover: #188ce8;
-  --bgc-main: #f5f5f5;
   --bgc-white: #ffffff;
   --bgc-btn: #f5f4fa;
   --bgc-hero: #2f303a;
@@ -16,7 +15,6 @@
 
 body {
   color: var(--p-text-color);
-  background-color: var(--bgc-main);
   font-family: Roboto, Arial, Tahoma, sans-serif;
   font-style: normal;
 }
@@ -224,16 +222,20 @@ img {
   margin-bottom: 30px;
   box-flex-group: var(--bgc-btn);
   border-radius: 4px;
+  background-color: var(--bgc-btn);
 }
 
 .benefits-title,
-.worker-title,
 .bottom-title {
   margin-bottom: 10px;
   color: var(--h-text-color);
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.benefits-title,
+.bottom-title {
   text-transform: uppercase;
 }
 
@@ -294,6 +296,7 @@ img {
 .worker-title {
   color: var(--h-text-color);
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .worker-title,
@@ -338,7 +341,9 @@ img {
 }
 
 .worker-soc-link:hover,
-.bottom-soc-link:hover {
+.worker-soc-link:focus,
+.bottom-soc-link:hover,
+.bottom-soc-link:focus {
   background-color: var(--acent-color);
   color: var(--bgc-white);
 }
@@ -357,7 +362,8 @@ img {
   border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--acent-color);
   border-color: var(--acent-color);
 }
